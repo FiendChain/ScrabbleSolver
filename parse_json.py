@@ -34,8 +34,8 @@ def generate_counts(words, word_counts=DEFAULT_WORD_COUNTS.copy()):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument(dest='input')
-    parser.add_argument('--output', default='counts.json')
+    parser.add_argument('input')
+    parser.add_argument('output')
     parser.add_argument('--override', action='store_true')
     parser.add_argument('--char_set', default=DEFAULT_CHAR_SET)
     args = parser.parse_args()
